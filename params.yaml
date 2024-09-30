@@ -1,0 +1,9 @@
+prepare:
+  test_size: 0.3
+  undersampling: 0.6
+  val_size: 0.1
+train:
+  criterion: gini
+  max_depth: 5
+  min_sample_leaf: 5
+  n_estimators: 150

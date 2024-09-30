@@ -1,0 +1,9 @@
+scikit-learn
+numpy
+pytest
+pandas
+dvc[s3]
+lightgbm  
+pytest
+mlflow
+awscli
