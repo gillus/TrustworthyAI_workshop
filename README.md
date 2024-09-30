@@ -1,4 +1,4 @@
-# EURAC-workshop-2023
+# EURAC-workshop-2024
 The repository contains the hand-one exercises used during the EURAC Trustworthy AI workshop
 # pytest, mlflow and DVC exercises 
 
