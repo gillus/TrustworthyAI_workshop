@@ -11,6 +11,7 @@ $.\venv_corso\Scripts\activate.bat                 (Windows cmd)
 ```
 Requirements installation
 ```sh
+$pip install --upgrade pip
 $pip install -e .
 ```
 Let's train our 'toy' model and add it to github
@@ -119,7 +120,7 @@ git push
 
 First we need to remove our dataset from the git repo
 ```sh
-git rm data/raw_data.csv 
+git rm --cached data/raw_data.csv 
 git commit -m "removing data from git"
 git push
 ```
