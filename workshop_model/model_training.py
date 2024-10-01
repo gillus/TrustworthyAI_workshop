@@ -4,7 +4,6 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
-from lightgbm import LGBMClassifier
 import json
 import os
 import joblib

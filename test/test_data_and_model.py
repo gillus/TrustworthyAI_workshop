@@ -1,6 +1,6 @@
 import pytest
 from sklearn.metrics import classification_report, precision_recall_curve, roc_auc_score
-from model.model_training import data_loader
+from workshop_model.model_training import data_loader
 import joblib
 import numpy as np
 import math
