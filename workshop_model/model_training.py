@@ -40,14 +40,14 @@ def train_rf_model(save_model = False):
     x_val, y_val = data_loader('./val.csv')
 
     # Scikit learn ColumnTransformer used to process ordinal and nominal data
-    ordinal_features = x_training.select_dtypes(include="number").columns
+    numerical_features = x_training.select_dtypes(include="number").columns
     categorical_features = x_training.select_dtypes(include="object").columns
 
-    numerical_transformer = Pipeline(steps=[('scaler', StandardScaler())])
+    numerical_transformer = Pipeline(steps=[('imputer', SimpleImputer())])
 
     categorical_transformer = Pipeline(steps=[('onehot', OneHotEncoder(handle_unknown='ignore'))])
 
-    x_encoder = ColumnTransformer(transformers=[('num', numerical_transformer, ordinal_features),
+    x_encoder = ColumnTransformer(transformers=[('num', numerical_transformer, numerical_features),
                                                 ('cat', categorical_transformer, categorical_features)])
 
     print(parameters)
